@@ -1,0 +1,55 @@
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
+import matplotlib.pyplot as plt
+import math
+n1,n2=input("Enter your range :").split()
+diff=int(n2)-int(n1)+1
+bits=int(math.log2(diff))+1
+qc=QuantumCircuit(bits,bits)
+myl={}
+for i in range(bits):
+    qc.h(i)
+    qc.measure(i,i)
+for i in range(diff):
+    myl[str(i)]=0;   
+sim=AerSimulator()
+for i in range(1000):
+    result=sim.run(qc,shots=1).result().get_counts()
+    l=list(result.keys())
+    num=int(l[0],2)
+    if num<diff:
+        myl[str(num)]+=1
+        if i==0:
+            guess=num+int(n1)
+    else:
+        while True:
+            k=sim.run(qc,shots=1).result().get_counts()
+            l1=list(k.keys())
+            n=int(l1[0],2)
+            if n<diff:
+                myl[str(n)]+=1
+                break   
+key=[]
+for i in range(int(n1),int(n2)+1): 
+    key.append(i)
+gn=int(input("Guess the number"))  
+tries=1
+while True:
+    if gn!=guess:
+          tries+=1
+          if gn<guess:
+             gn=int(input("Wrong!!The number is less than the actual number!!"))
+          else:
+            gn=int(input("Wrong!!The number is greater than the actual number!!"))
+    else:
+        break
+print("Greatt!! you did it in " , tries ,"tries")
+plt.figure()
+plt.bar(key,myl.values())
+plt.xticks(key)
+plt.ylabel("generated number repeatation")
+plt.xlabel("Random Numbers")
+plt.title("Random Number Generator")
+for i,v in enumerate(myl.values()):
+    plt.text(i+int(n1),v+1,str(v),ha='center')
+plt.show()
