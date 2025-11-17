@@ -21,7 +21,7 @@ From these results, the very first valid number is saved separately which become
 Initially the program asks the user to choose one option from : 
 1. Play the guessing game of numbers within your given range.
 2. Plot a bar graph that illustrates the repeatition of numbers within your range.
-and then it proceeds with the program accordingly.
+And then it proceeds with the program accordingly.
 # 1. Guessing Game
 Once the random number is chosen, the user can try to guess it.
 The program gives hints like whether the guess is higher or lower, and counts how many tries it takes. It’s a simple way to show how unpredictable the quantum 
