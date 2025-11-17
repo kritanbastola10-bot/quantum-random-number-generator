@@ -21,8 +21,8 @@ From these results, the very first valid number is saved separately which become
 Initially the program asks the user to choose one option from : 
 1. Play the guessing game of numbers within your given range.
 2. Plot a bar graph that illustrates the repeatition of numbers within your range.
-![image alt](https://github.com/kritanbastola10-bot/quantum-random-number-generator/blob/c2e7a9ca5e4cdb7dc7f1ce74e5556de7a0276662/Screenshot%202025-11-17%20231757.png)
-      And then it proceeds with the program accordingly.
+![image alt](https://github.com/kritanbastola10-bot/quantum-random-number-generator/blob/c2e7a9ca5e4cdb7dc7f1ce74e5556de7a0276662/Screenshot%202025-11-17%20231757.png) <br>
+And then it proceeds with the program accordingly.
       
 # 1. Guessing Game
 Once the random number is chosen, the user can try to guess it.
