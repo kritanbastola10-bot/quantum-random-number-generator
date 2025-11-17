@@ -34,7 +34,7 @@ choice really is.
 # 2. Bar Graph Visualization
 The second option displays a bar graph showing how often each number was generated out of the 1000 trials.
 This makes it easy to see whether the distribution looks uniform and helps the user visualize quantum randomness in action.
-
+![image alt](https://github.com/kritanbastola10-bot/quantum-random-number-generator/blob/07dd3f856cbb267a7f3cbcb425d1237c829ba33d/Screenshot%202025-11-17%20232138.png)
 # Summary of Results
 Overall, the QRNG works reliably for any range of numbers.
 The quantum circuit behaves as expected, giving a spread of values that looks random and balanced. The bar chart reinforces this visually, 
