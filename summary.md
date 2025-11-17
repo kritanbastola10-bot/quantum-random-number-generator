@@ -27,7 +27,7 @@ Once the random number is chosen, the user can try to guess it.
 The program gives hints like whether the guess is higher or lower, and counts how many tries it takes. It’s a simple way to show how unpredictable the quantum 
 choice really is.
 
-
+![image](https://github.com/username/repo-name/assets/1234567890abcdef/example.png)
 
 # 2. Bar Graph Visualization
 The second option displays a bar graph showing how often each number was generated out of the 1000 trials.
